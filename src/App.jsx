@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
-import backgroundVideo from './assets/background.mp4';
+import backgroundVideo from './assets/output.mp4';
 
 function App() {
   const [currentState, setCurrentState] = useState(1);

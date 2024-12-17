@@ -351,6 +351,7 @@
   font-family: 'Rubik Dirt', sans-serif;
 }
 
+
 .input-system.flash-green {
   border-color: #00ff00;
   box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
@@ -372,6 +373,61 @@
   background: url('/eye.png') no-repeat center center;
   background-size: cover;
   animation: pulse 3s infinite;
+}
+
+@media only screen and (max-height: 718px) {
+  .input-system {
+    margin-top: 128px;
+  }
+  .input-button {
+    margin-top: 128px;
+  }
+
+}
+
+@media only screen and (max-height: 700px) {
+  .input-system {
+    margin-top: 150px;
+  }
+  .input-button {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-height: 620px) {
+  .input-system {
+    margin-top: 180px;
+  }
+  .input-button {
+    margin-top: 180px;
+  }
+}
+
+@media only screen and (max-height: 570px) {
+  .input-system {
+    margin-top: 210px;
+  }
+  .input-button {
+    margin-top: 210px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .input-system {
+    margin-top: 250px;
+  }
+  .input-button {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (max-height: 420px) {
+  .input-system {
+    margin-top: 280px;
+  }
+  .input-button {
+    margin-top: 280px;
+  }
 }
 
 @keyframes pulse {

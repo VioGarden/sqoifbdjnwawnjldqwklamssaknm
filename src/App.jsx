@@ -16,10 +16,10 @@ function App() {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
   useEffect(() => {
-    setName1(getRandomWord(8))
-    setName2(getRandomWord(7))
-    setName3(getRandomWord(6))
-    setName4(getRandomWord(5))
+    setName1(getRandomWord(12))
+    setName2(getRandomWord(12))
+    setName3(getRandomWord(12))
+    setName4(getRandomWord(12))
   }, [])
 
   function getRandomLetter() {
@@ -41,11 +41,11 @@ function App() {
 
     const interval = setInterval(() => {
       if (count < 5) {
-        setName1(getRandomWord(8));
+        setName1(getRandomWord(12));
         count++;
       } else {
         clearInterval(interval);
-        setName1("MANGROVES");
+        setName1("Thank you for accepting your invitation");
       }
     }, 50);
   }
@@ -55,11 +55,11 @@ function App() {
 
     const interval = setInterval(() => {
       if (count < 5) {
-        setName2(getRandomWord(8));
+        setName2(getRandomWord(12));
         count++;
       } else {
         clearInterval(interval);
-        setName2("WILLOWS");
+        setName2("Welcome to Deus Ex Machina");
       }
     }, 50);
   }
@@ -69,25 +69,11 @@ function App() {
 
     const interval = setInterval(() => {
       if (count < 5) {
-        setName3(getRandomWord(8));
+        setName3(getRandomWord(12));
         count++;
       } else {
         clearInterval(interval);
-        setName3("OBSIDIAN");
-      }
-    }, 50);
-  }
-
-  function handleHover4() {
-    let count = 0;
-
-    const interval = setInterval(() => {
-      if (count < 5) {
-        setName4(getRandomWord(8));
-        count++;
-      } else {
-        clearInterval(interval);
-        setName4("BALLOON");
+        setName3("Please await further instructions");
       }
     }, 50);
   }
@@ -143,11 +129,9 @@ function App() {
       {currentState === 2 && (
         <div className="stateTwo">
           <img src="/eye.png" alt="Eye" className="stateTwoImage" />
-          <div className="stateTwoNameInviter">Invitation</div>
           <div className="stateTwoName1" onMouseEnter={handleHover}>{name1}</div>
           <div className="stateTwoName2" onMouseEnter={handleHover2}>{name2}</div>
           <div className="stateTwoName3" onMouseEnter={handleHover3}>{name3}</div>
-          <div className="stateTwoName4" onMouseEnter={handleHover4}>{name4}</div>
         </div>
       )}
       {currentState === 3 && (

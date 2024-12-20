@@ -375,60 +375,6 @@
   animation: pulse 3s infinite;
 }
 
-@media only screen and (max-height: 718px) {
-  .input-system {
-    margin-top: 128px;
-  }
-  .input-button {
-    margin-top: 128px;
-  }
-
-}
-
-@media only screen and (max-height: 700px) {
-  .input-system {
-    margin-top: 150px;
-  }
-  .input-button {
-    margin-top: 150px;
-  }
-}
-
-@media only screen and (max-height: 620px) {
-  .input-system {
-    margin-top: 180px;
-  }
-  .input-button {
-    margin-top: 180px;
-  }
-}
-
-@media only screen and (max-height: 570px) {
-  .input-system {
-    margin-top: 210px;
-  }
-  .input-button {
-    margin-top: 210px;
-  }
-}
-
-@media only screen and (max-height: 500px) {
-  .input-system {
-    margin-top: 250px;
-  }
-  .input-button {
-    margin-top: 250px;
-  }
-}
-
-@media only screen and (max-height: 420px) {
-  .input-system {
-    margin-top: 280px;
-  }
-  .input-button {
-    margin-top: 280px;
-  }
-}
 
 @keyframes pulse {
   0% {
@@ -473,6 +419,7 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+  text-align: center;
 }
 
 .stateTwoName1:hover,
@@ -497,6 +444,77 @@
   height: auto;
   margin-bottom: 20px;
 }
+
+@media only screen and (max-height: 888px) {
+	.stateTwoName1,
+	.stateTwoName2,
+	.stateTwoName3,
+	.stateTwoName4 {
+	  font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-height: 718px) {
+	.input-system {
+	  margin-top: 128px;
+	}
+	.input-button {
+	  margin-top: 128px;
+	}
+  
+	.stateTwoName1,
+	.stateTwoName2,
+	.stateTwoName3,
+	.stateTwoName4 {
+	  font-size: 1.2rem;
+	}
+  
+  }
+  
+  @media only screen and (max-height: 700px) {
+	.input-system {
+	  margin-top: 150px;
+	}
+	.input-button {
+	  margin-top: 150px;
+	}
+  }
+  
+  @media only screen and (max-height: 620px) {
+	.input-system {
+	  margin-top: 180px;
+	}
+	.input-button {
+	  margin-top: 180px;
+	}
+  }
+  
+  @media only screen and (max-height: 570px) {
+	.input-system {
+	  margin-top: 210px;
+	}
+	.input-button {
+	  margin-top: 210px;
+	}
+  }
+  
+  @media only screen and (max-height: 500px) {
+	.input-system {
+	  margin-top: 250px;
+	}
+	.input-button {
+	  margin-top: 250px;
+	}
+  }
+  
+  @media only screen and (max-height: 420px) {
+	.input-system {
+	  margin-top: 280px;
+	}
+	.input-button {
+	  margin-top: 280px;
+	}
+  }
 
 
 .gradient-bg {
